@@ -11,6 +11,6 @@ end
 
 
 get '/:short_url' do
-  url = Url.find_by(short_url: params[:short_url])
-  redirect "http://" + url.long_url
+ 	url = Url.find_by(short_url: params[:short_url])
+  	redirect "http://" + url.long_url
 end
