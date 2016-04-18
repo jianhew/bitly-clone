@@ -1,2 +1,15 @@
 <h1>Hello World</h1>
-<p>See Me in views/static/index.html.erb</p>
+<h2>Shorten your URL</h2>
+
+
+<form action="/urls" method="post">
+	Enter URL:
+	<input type="text" name="long_url">
+	<input type="submit" value="Submit">
+</form>
+
+<% unless @url.nil? %> 
+<p> Your original URL: <%= @url.long_url %>. </p>
+<p> Your short URL:
+<a href="<%= @url.short_url %>"><%=@url.short_url %></a></p>
+<% end %>
