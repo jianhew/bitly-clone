@@ -1,68 +1,54 @@
 
 h1 {
-    background-color: cornflowerblue;
-    font-family: fantasy;
+    font-family: hannotate sc;
     text-align: center;
+    font-size: -webkit-xxx-large;
+    color: whitesmoke;
 }
 
 
 h2 {
-    font-family: fantasy;
+    font-family: hannotate sc;
     text-align: center;
+    color: whitesmoke;
 }
 
 p {
-    font-family: fantasy;
+    font-family: hannotate sc;
     text-align: center;
+    color: whitesmoke;
+    
 }
 
-/*bg {
-  position: fixed; 
-  top: 0; 
-  left: 0; 
-	
-   Preserve aspet ratio 
-  min-width: 100%;
-  min-height: 100%;
-}*/
 
-/*
-#bg {
-  position: fixed; 
-  top: -50%; 
-  left: -50%; 
-  width: 200%; 
-  height: 200%;
-}
-#bg img {
-  position: absolute; 
-  top: 0; 
-  left: 0; 
-  right: 0; 
-  bottom: 0; 
-  margin: auto; 
-  min-width: 50%;
-  min-height: 50%;
-}
-*/
 body {
     background-color: lightgray;
+    /*background-image: url("http://wallpapercave.com/wp/4nM2TkR.jpg");*/
+
+    background-image: url("../img/gal.jpg");
+    background-size: 100% 100%;
 }
 
 form {
     text-align: center;
-    font-family: fantasy;
+    font-family: hannotate sc;
     font-size: larger;
+    color: whitesmoke;
 }
 
+a {
+    color: yellow;
+}
 
 input[type="text"] {
-    font-family: fantasy;
+    font-family: hannotate sc;
+    font-size: large;
 }
 
 
 input[type="submit"] {
-    font-family: fantasy;
+    font-family: hannotate sc;
+    color: whitesmoke;
 }
 
 
@@ -71,4 +57,6 @@ footer{
     height: 100px;
     position: absolute;
     bottom: 0px;
+    color: whitesmoke;
+
 }
