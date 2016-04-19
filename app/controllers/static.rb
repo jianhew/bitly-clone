@@ -1,4 +1,5 @@
 get '/' do
+	@urls = Url.all
   	erb :"static/index"
 end
 
@@ -11,6 +12,10 @@ end
 
 
 get '/:short_url' do
- 	url = Url.find_by(short_url: params[:short_url])
+ 	url = Url.find_by(short_url: params[:short_url])  
+	count = url.counter.to_i
+	count += 1
+	url.counter = count
+	url.save
   	redirect "http://" + url.long_url
 end
